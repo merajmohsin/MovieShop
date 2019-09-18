@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Page_Master.master.cs" Inherits="GroupProject.MasterPage.Page_Master" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+        <link rel="stylesheet"  href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css"  />
+    <link rel="stylesheet" href="Style.css">
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    
+   
+    <style type="text/css">
+   
+        }
+        .auto-style1 {
+            height: 79px;
+        }
+    </style>
+
+    
+   
+</head>
+<body style="padding:20px; margin:auto">
+    <div style="align-self:center;">
+        <h1 style="text-align:center; "  class="auto-style1">
+            &nbsp;Movie Shop</h1>
+        </div>
+        <form id="form" runat="server">
+        <div id="bar">
+            <div id="search" style="float:right">
+                <asp:TextBox ID="txtSearch" runat="server" Width="319px"></asp:TextBox>
+                <asp:Button CssClass="a" ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" />
+                </div>
+            <div id="nav" style="padding:inherit" class="auto-style1"; ">
+                <asp:Button runat="server" Text="home" CssClass="btn btn-primary" OnClick="btnhome_Click" />
+                <asp:Button CssClass="btn btn-primary" ID="btnaccount" runat="server" Text="Your Account" OnClick="btnaccount_Click" />
+                <asp:Button CssClass="btn btn-primary" ID="btnorder" runat="server" Text="Your Orders" OnClick="btnorder_Click" />
+                <asp:Button CssClass="btn btn-primary" ID="btncart" runat="server" Text="Shopping Cart" OnClick="btncart_Click" />
+                <asp:Button CssClass="btn btn-primary" ID="btnlogin" runat="server" Text="Login In" OnClick="btnlogin_Click" />
+                <asp:Button CssClass="btn btn-primary" ID="btnregister" runat="server" Text="Register" OnClick="btnregister_Click" />
+                <asp:Button CssClass="btn btn-primary" ID="btnlogout" runat="server" Text="Logout" OnClick="btnlogout_Click" />
+            </div>
+        </div>
+            
+        <div id="wrapper" class="container" style="text-align:center;padding:20px">
+             
+   
+        </div>
+
+          
+            </form><br /><br />
+    <div id="content-div" style="text-align:center;">
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+   </div>
+        
+     <div id="footer" style="font-size: large;padding:30px; color: white; text-align: center;">
+            ©2018 all righ reserved by MovieShop Inc</div>	
+
+  <script src="../js/bootstrap.min.js"></script>
+            <div id="altnav" style="font-family: Calibri;font-size:33px; float: right;">
+                <a href="admin.aspx">Administration</a>
+            </div>
+            </body>
+</html>
